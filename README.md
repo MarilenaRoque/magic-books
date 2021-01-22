@@ -1,4 +1,4 @@
-<h1 align="center"> Magicians Calculator </h1>
+<h1 align="center"> Magic Books </h1>
 
 
 > The requirement for this project is to build the front-end of an application that will help companies organize and manage their bookstore. It needs to be fast, dynamic and responsive to their actions and therefore, the project will be developed using React & Redux.
