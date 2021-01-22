@@ -5,7 +5,7 @@ import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>
-      <App title={'Microverse Project'}/>
+    <App title="Microverse Project" />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById('root'),
 );
