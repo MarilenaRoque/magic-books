@@ -12,7 +12,7 @@ code {
     monospace;
 }
 
-h1 {
+h1, h2 {
   color: #7955A2;
   text-align: center;
 }
