@@ -1,7 +1,7 @@
 <h1 align="center"> Magicians Calculator </h1>
 
 
-> The requirements for this project is to build the front-end of an application that will help companies organize and manage their bookstore. It needs to be fast, dynamic and responsive to their actions and therefore, the project will be developed using React & Redux.
+> The requirement for this project is to build the front-end of an application that will help companies organize and manage their bookstore. It needs to be fast, dynamic and responsive to their actions and therefore, the project will be developed using React & Redux.
 
 
 ### You can access a Live Demo [HERE](https://booksmagic.herokuapp.com/)
