@@ -1,17 +1,13 @@
-import PropTypes from 'prop-types';
+import BooksForm from './components/BooksForm';
+import BooksList from './components/BooksList';
 
-function App(props) {
-  const { title } = props;
+function App() {
   return (
-    <>
-      <h1> MagicBooks App</h1>
-      <h2>{title}</h2>
-    </>
+    <div>
+      <BooksList />
+      <BooksForm />
+    </div>
   );
 }
 
 export default App;
-
-App.propTypes = {
-  title: PropTypes.string.isRequired,
-};
