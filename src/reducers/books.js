@@ -1,6 +1,6 @@
 import { CREATE_BOOK, REMOVE_BOOK } from '../actionTypes';
 
-let idCounter = 5;
+// let idCounter = 5;
 const listingBooks = {
   allIds: [1, 2, 3, 4, 5],
   byIds: {
@@ -27,34 +27,15 @@ const listingBooks = {
   },
 };
 
-const todos = (state = listingBooks, action) => {
-  const { id } = action.book;
-  const newState = {
-    ...state,
-    byIds: {
-      ...state.byIds,
-    },
-  };
+const books = (state = listingBooks, action) => {
   switch (action.type) {
     case CREATE_BOOK:
-      idCounter += 1;
-      return {
-        ...state,
-        allIds: [...state.allIds, idCounter],
-        byIds: {
-          ...state.byIds,
-          [idCounter]: {
-            title: action.book.title,
-            category: action.book.category,
-          },
-        },
-      };
+      return state;
     case REMOVE_BOOK:
-      delete newState[id];
-      return newState;
+      return state;
     default:
       return state;
   }
 };
 
-export default todos;
+export default books;

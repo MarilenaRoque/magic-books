@@ -2,7 +2,9 @@ import { CREATE_BOOK, REMOVE_BOOK } from '../actionTypes';
 
 export const createBook = book => ({
   type: CREATE_BOOK,
-  theBook: book,
+  theBook: {
+    id: book.id,
+  },
 });
 
 export const removeBook = book => ({
