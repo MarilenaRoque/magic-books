@@ -2,6 +2,6 @@ import React from 'react';
 
 export default function BooksList() {
   return (
-    <div />
+    <ul className="books-list" />
   );
 }
