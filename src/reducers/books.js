@@ -29,6 +29,8 @@ const listingBooks = {
 
 const books = (state = listingBooks, action) => {
   counterId += 1;
+  const newState = state;
+  const newIds = [];
   switch (action.type) {
     case CREATE_BOOK:
       return {
@@ -43,7 +45,19 @@ const books = (state = listingBooks, action) => {
         },
       };
     case REMOVE_BOOK:
-      return state;
+      newState.allIds.forEach(item => {
+        if (item !== action.payload.id) {
+          newIds.push(item);
+        }
+      });
+      newState.allIds = newIds;
+      delete newState.byIds[action.payload.id];
+      return {
+        allIds: [...newState.allIds],
+        byIds: {
+          ...newState.byIds,
+        },
+      };
     default:
       return state;
   }
