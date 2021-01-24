@@ -1,6 +1,6 @@
 import { CREATE_BOOK, REMOVE_BOOK } from '../actionTypes';
 
-// let idCounter = 5;
+let counterId = 5;
 const listingBooks = {
   allIds: [1, 2, 3, 4, 5],
   byIds: {
@@ -28,9 +28,20 @@ const listingBooks = {
 };
 
 const books = (state = listingBooks, action) => {
+  counterId += 1;
   switch (action.type) {
     case CREATE_BOOK:
-      return state;
+      return {
+        ...state,
+        allIds: [...state.allIds, counterId],
+        byIds: {
+          ...state.byIds,
+          [counterId]: {
+            title: action.payload.title,
+            category: action.payload.category,
+          },
+        },
+      };
     case REMOVE_BOOK:
       return state;
     default:
