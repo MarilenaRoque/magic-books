@@ -17,6 +17,9 @@
  - Set the main tools (Redux, React-Redux, Redux Toolkit and NPM)
  - Deploy the application
 
+### #2 Milestone Requirements:
+
+
 ## Built With
 
 - Javascript
