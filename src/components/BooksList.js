@@ -18,7 +18,7 @@ function BooksList({ bookList }) {
   );
 }
 
-const mapStateToProps = state => ({ bookList: state.books.allIds.join() });
+const mapStateToProps = state => ({ bookList: state.books.join() });
 
 export default connect(mapStateToProps)(BooksList);
 
