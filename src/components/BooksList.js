@@ -22,10 +22,7 @@ function BooksList({ bookList }) {
         </thead>
         <tbody>
           {bookList && bookList.length
-            ? bookList.map(book => {
-              const { id, title, category } = book;
-              return <Book key={Math.random + id} id={id} title={title} category={category} />;
-            })
+            ? bookList.map(book => <Book key={Math.random + book.id} book={book} />)
             : 'No books yet! :( '}
         </tbody>
       </table>
