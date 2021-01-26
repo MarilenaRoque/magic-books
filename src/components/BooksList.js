@@ -1,17 +1,11 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import store from '../store';
 import Book from './Book';
-
-const removeBookX = () => {
-  store.dispatch({ type: 'REMOVE_BOOK', payload: { id: 1 } });
-};
 
 function BooksList({ bookList }) {
   return (
     <>
-      <button type="button" onClick={removeBookX}>Hello</button>
       <table>
         <thead>
           <tr>
