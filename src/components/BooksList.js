@@ -9,20 +9,28 @@ const removeBookX = () => {
 };
 
 function BooksList({ bookList }) {
-  console.log(bookList);
-    <button type="button" onClick={removeBookX}>Hello</button>;
-    return (
-      <>
-        <table>
+  return (
+    <>
+      <button type="button" onClick={removeBookX}>Hello</button>
+      <table>
+        <thead>
           <tr>
             <th>Book ID</th>
             <th>Title</th>
             <th>Category</th>
           </tr>
-          <Book id={50} title="Test" category="another test" />
-        </table>
-      </>
-    );
+        </thead>
+        <tbody>
+          {bookList && bookList.length
+            ? bookList.map(book => {
+              const { id, title, category } = book;
+              return <Book key={Math.random + id} id={id} title={title} category={category} />;
+            })
+            : 'No books yet! :( '}
+        </tbody>
+      </table>
+    </>
+  );
 }
 
 const mapStateToProps = state => ({ bookList: state.books });
