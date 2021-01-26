@@ -19,6 +19,9 @@
 
 ### #2 Milestone Requirements:
 
+ - Set files and folders structure, dividing, reducers, containers and presentational components.
+ -  
+
 
 ## Built With
 

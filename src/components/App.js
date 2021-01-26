@@ -1,5 +1,5 @@
-import BooksForm from '../components/BooksForm';
-import BooksList from '../components/BooksList';
+import BooksForm from '../containers/BooksForm';
+import BooksList from '../containers/BooksList';
 
 function App() {
   return (
