@@ -28,7 +28,7 @@ const listingBooks = [
   },
 ];
 
-function removedState(id) {
+function removeBookFromState(id) {
   return function newState(book) {
     return book.id !== id;
   };
@@ -40,8 +40,7 @@ const books = (state = listingBooks, action) => {
     case CREATE_BOOK:
       return [...state, action.payload];
     case REMOVE_BOOK:
-      newState = state.filter(removedState(action.payload.id));
-      console.log(newState);
+      newState = state.filter(removeBookFromState(action.payload.id));
       return newState;
     default:
       return state;

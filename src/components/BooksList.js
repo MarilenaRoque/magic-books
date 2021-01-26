@@ -8,20 +8,23 @@ const removeBookX = () => {
 };
 
 function BooksList({ bookList }) {
+  console.log(bookList);
   return (
     <>
-      <h1 className="books-list">
-        {bookList}
-      </h1>
+      <h1 className="books-list">HhHH</h1>
       <button type="button" onClick={removeBookX}>Hello</button>
     </>
   );
 }
 
-const mapStateToProps = state => ({ bookList: state.books.join() });
+const mapStateToProps = state => ({ bookList: state.books });
 
 export default connect(mapStateToProps)(BooksList);
 
 BooksList.propTypes = {
-  bookList: PropTypes.string.isRequired,
+  bookList: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired,
+    title: PropTypes.string.isRequired,
+    category: PropTypes.string.isRequired,
+  })).isRequired,
 };
