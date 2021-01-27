@@ -14,6 +14,11 @@ const BooksForm = () => {
     setCategory(input);
   };
 
+  const handleSubmit = () => {
+    setTitle('');
+    setCategory('Kids');
+  };
+
   return (
     <form>
       <label htmlFor="title">
@@ -33,7 +38,7 @@ const BooksForm = () => {
         <br />
       </label>
       <br />
-      <button type="button" className="add-book">
+      <button type="button" className="add-book" onClick={handleSubmit}>
         Submit
       </button>
     </form>
