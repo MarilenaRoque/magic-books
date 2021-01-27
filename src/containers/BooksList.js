@@ -3,26 +3,24 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
 
-function BooksList({ bookList }) {
-  return (
-    <>
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          {bookList && bookList.length
-            ? bookList.map(book => <Book key={Math.random + book.id} book={book} />)
-            : 'No books yet! :( '}
-        </tbody>
-      </table>
-    </>
-  );
-}
+const BooksList = ({ bookList }) => (
+  <>
+    <table>
+      <thead>
+        <tr>
+          <th>Book ID</th>
+          <th>Title</th>
+          <th>Category</th>
+        </tr>
+      </thead>
+      <tbody>
+        {bookList && bookList.length
+          ? bookList.map(book => <Book key={Math.random + book.id} book={book} />)
+          : 'No books yet! :( '}
+      </tbody>
+    </table>
+  </>
+);
 
 const mapStateToProps = state => ({ bookList: state.books });
 

@@ -28,11 +28,10 @@ const listingBooks = [
   },
 ];
 
-function removeBookFromState(id) {
-  return function newState(book) {
-    return book.id !== id;
-  };
-}
+const removeBookFromState = id => {
+  const newState = book => book.id !== id;
+  return newState;
+};
 
 const books = (state = listingBooks, action) => {
   let newState = [];
