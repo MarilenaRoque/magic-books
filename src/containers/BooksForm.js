@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import { createBook } from '../actions/index';
 
 const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
-const BooksForm = () => {
+const BooksForm = props => {
   const [title, setTitle] = useState('');
-  const [category, setCategory] = useState('Kids');
+  const [category, setCategory] = useState('Action');
 
   const handleChangeTitle = input => {
     setTitle(input);
@@ -16,7 +19,12 @@ const BooksForm = () => {
 
   const handleSubmit = () => {
     setTitle('');
-    setCategory('Kids');
+    setCategory('Action');
+    const book = {
+      title,
+      category,
+    };
+    if (title) { props.createBook(book); }
   };
 
   return (
@@ -45,4 +53,8 @@ const BooksForm = () => {
   );
 };
 
-export default BooksForm;
+export default connect(null, { createBook })(BooksForm);
+
+BooksForm.propTypes = {
+  createBook: PropTypes.func.isRequired,
+};
