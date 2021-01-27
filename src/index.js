@@ -1,11 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import { Provider } from 'react-redux';
+import App from './components/App';
+import store from './store';
 
+const rootElement = document.getElementById('root');
 ReactDOM.render(
-  <React.StrictMode>
-    <App title="Microverse Project" />
-  </React.StrictMode>,
-  document.getElementById('root'),
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  rootElement,
 );
