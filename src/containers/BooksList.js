@@ -34,7 +34,15 @@ const BooksList = ({ bookList, removeBook, handleFilterChange }) => (
   </>
 );
 
-const mapStateToProps = state => ({ bookList: state.books });
+const getBooksByFilter = state => {
+  const { books, filter } = state;
+  if (filter !== 'all') {
+    return books.filter(book => (book.category === filter));
+  }
+  return books;
+};
+
+const mapStateToProps = state => ({ bookList: getBooksByFilter(state) });
 
 export default connect(mapStateToProps, { removeBook, handleFilterChange })(BooksList);
 
