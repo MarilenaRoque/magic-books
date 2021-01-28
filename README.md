@@ -26,6 +26,13 @@
  - Set store with an initial state.
  - Pass the store to App component using Provider.
 
+### #3 Milestone Requirements:
+
+ - Make BookForm Component Stateful.
+ - State is updated when fields change.
+ - Add a column to BookList table with remove buttons
+ - HandleRemoveBook function reacts to onClick event and removes the book from the store.
+
 
 ## Built With
 
