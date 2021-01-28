@@ -1,4 +1,4 @@
-import { CREATE_BOOK, REMOVE_BOOK } from '../constants';
+import { CREATE_BOOK, REMOVE_BOOK, CHANGE_FILTER } from '../constants';
 
 let idCounter = 5;
 
@@ -19,5 +19,12 @@ export const removeBook = book => ({
   type: REMOVE_BOOK,
   payload: {
     id: book.id,
+  },
+});
+
+export const handleFilterChange = filter => ({
+  type: CHANGE_FILTER,
+  payload: {
+    filter,
   },
 });
