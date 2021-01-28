@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { createBook } from '../actions/index';
+import { createBook, removeBook } from '../actions/index';
 
 const categories = ['Action', 'Biography', 'History', 'Horror', 'Kids', 'Learning', 'Sci-Fi'];
 
@@ -53,7 +53,7 @@ const BooksForm = props => {
   );
 };
 
-export default connect(null, { createBook })(BooksForm);
+export default connect(null, { createBook, removeBook })(BooksForm);
 
 BooksForm.propTypes = {
   createBook: PropTypes.func.isRequired,
