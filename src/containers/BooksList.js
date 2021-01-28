@@ -3,9 +3,13 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { removeBook } from '../actions/index';
+import CategoryFilter from '../components/CategoryFilter';
 
 const BooksList = ({ bookList, removeBook }) => (
   <>
+    <br />
+    <br />
+    <CategoryFilter />
     <table>
       <thead>
         <tr>
