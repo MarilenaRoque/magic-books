@@ -28,7 +28,7 @@ const BooksList = ({ bookList, removeBook, handleFilterChange }) => (
               handleRemoveBook={removeBook}
             />
           ))
-          : 'No books yet! :( '}
+          : (<tr><td>No books yet! :(</td></tr>)}
       </tbody>
     </table>
   </>
