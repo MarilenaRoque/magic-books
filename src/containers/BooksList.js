@@ -4,10 +4,12 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { removeBook, handleFilterChange } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
+import styles from '../stylesheets/BooksList.module.css';
 
 const BooksList = ({ bookList, removeBook, handleFilterChange }) => (
   <>
     <CategoryFilter handleFilterChange={handleFilterChange} />
+    <hr className={styles.Line} />
     <table>
       <thead>
         <tr>
