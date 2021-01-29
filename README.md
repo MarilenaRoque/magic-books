@@ -33,6 +33,13 @@
  - Add a column to BookList table with remove buttons
  - HandleRemoveBook function reacts to onClick event and removes the book from the store.
 
+ ### #4 Milestone Requirements:
+
+  - Build a presentational component called CategoryFilter
+  - Build a new redux reducer to set a book filter
+  - Define an action to set the filter
+  - User can filter books displayed by category using a select box
+
 
 ## Built With
 
