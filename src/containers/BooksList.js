@@ -7,8 +7,6 @@ import CategoryFilter from '../components/CategoryFilter';
 
 const BooksList = ({ bookList, removeBook, handleFilterChange }) => (
   <>
-    <br />
-    <br />
     <CategoryFilter handleFilterChange={handleFilterChange} />
     <table>
       <thead>

@@ -1,0 +1,62 @@
+:root {
+    --azure: #0290ff;
+}
+
+.BookstoreCMS {
+    width: 240px;
+    height: 37px;
+    margin: 6px 47px 2px 0;
+    font-family: Montserrat;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: var(--azure);
+  }
+
+  .BOOKS {
+    width: 75px;
+    height: 22px;
+    margin: 18px 41px 11px 0;
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 1.9px;
+    color: #121212;
+  }
+
+  .panelBg {
+    height: 95px;
+    margin: 0px;
+    padding: 0px 99px 0px 100px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navLeft {
+      display: flex;
+  }
+
+  .Mask {
+    width: 17px;
+    height: 17px;
+  }
+
+  .roundProfile {
+    width: 45px;
+    height: 45px;
+    border: solid 1px #e8e8e8;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;         
+  }
+  
+  

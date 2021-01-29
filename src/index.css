@@ -31,3 +31,8 @@ h2 {
   color: #7955a2;
   text-align: center;
 }
+
+#root {
+  padding: 0px;
+  margin: 0px;
+}
