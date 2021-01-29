@@ -10,27 +10,18 @@ const BooksList = ({ bookList, removeBook, handleFilterChange }) => (
   <>
     <CategoryFilter handleFilterChange={handleFilterChange} />
     <hr className={styles.Line} />
-    <table>
-      <thead>
-        <tr>
-          <th>Book ID</th>
-          <th>Title</th>
-          <th>Category</th>
-          <th>Remove</th>
-        </tr>
-      </thead>
-      <tbody>
-        {bookList && bookList.length
-          ? bookList.map(book => (
-            <Book
-              key={Math.random + book.id}
-              book={book}
-              handleRemoveBook={removeBook}
-            />
-          ))
-          : (<tr><td>No books yet! :(</td></tr>)}
-      </tbody>
-    </table>
+
+    <div>
+      {bookList && bookList.length
+        ? bookList.map(book => (
+          <Book
+            key={Math.random + book.id}
+            book={book}
+            handleRemoveBook={removeBook}
+          />
+        ))
+        : (<tr><td>No books yet! :(</td></tr>)}
+    </div>
   </>
 );
 

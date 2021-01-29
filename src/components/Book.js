@@ -2,15 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const Book = ({ book, handleRemoveBook }) => {
-  const { id, title, category } = book;
+  const { title, category } = book;
   return (
 
-    <tr>
-      <td>{id}</td>
+    <div>
       <td>{title}</td>
       <td>{category}</td>
       <td><button type="button" onClick={() => handleRemoveBook(book)}> X </button></td>
-    </tr>
+    </div>
   );
 };
 
