@@ -28,23 +28,12 @@ const BooksForm = props => {
 
   return (
     <form>
-      <label htmlFor="title">
-        Title
-        <br />
-        <input type="text" name="title" value={title} onChange={e => handleChangeTitle(e.target.value)} />
-        <br />
-      </label>
-      <br />
-      <label htmlFor="categories">
-        Category
-        {' '}
-        <br />
-        <select name="categories" id="categories" value={category} onChange={e => handleChangeCategory(e.target.value)}>
-          {categories.map(item => <option key={item} value={item}>{item}</option>)}
-        </select>
-        <br />
-      </label>
-      <br />
+      <input type="text" name="title" value={title} onChange={e => handleChangeTitle(e.target.value)} />
+
+      <select name="categories" id="categories" value={category} onChange={e => handleChangeCategory(e.target.value)}>
+        {categories.map(item => <option key={item} value={item}>{item}</option>)}
+      </select>
+
       <button type="button" className="add-book" onClick={handleSubmit}>
         Submit
       </button>
