@@ -1,14 +1,49 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from '../stylesheets/Book.module.css';
+import progress from '../progress.svg';
 
 const Book = ({ book, handleRemoveBook }) => {
   const { title, category } = book;
   return (
 
-    <div>
-      <td>{title}</td>
-      <td>{category}</td>
-      <td><button type="button" onClick={() => handleRemoveBook(book)}> X </button></td>
+    <div className={styles.BookPanel}>
+      <div className={styles.BookInfo}>
+        <p className={styles.Category}>{category}</p>
+        <p className={styles.title}>{title}</p>
+        <p className={styles.blueText}>Author</p>
+        <button type="button" className={styles.Buttons}>
+          {' '}
+          <span className={styles.blueText}>Comments </span>
+        </button>
+        <div className={styles.verticalLine} />
+        <button type="button" onClick={() => handleRemoveBook(book)} className={styles.Buttons}>
+          {' '}
+          <span className={styles.blueText}>Remove </span>
+        </button>
+        <div className={styles.verticalLine} />
+        <button type="button" className={styles.Buttons}>
+          {' '}
+          <span className={styles.blueText}>Edit </span>
+        </button>
+      </div>
+      <div className={styles.progress}>
+        <div className={styles.bookProgress}>
+          <img src={progress} alt="progress graph" className={styles.progressImage} />
+          <div className={styles.progressInfo}>
+            <p className={styles.percentage}>100%</p>
+            <p className={styles.completed}>Completed</p>
+          </div>
+        </div>
+        <div className={styles.verticalDivision} />
+        <div className={styles.ChapterInfo}>
+          <p className={styles.currentChapter}>Current Chapter</p>
+          <p className={styles.currentChapterNumber}>Chapter 20</p>
+          <button type="button" className={styles.buttonUpdate}>
+            <span className={styles.update}>Update Progress</span>
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

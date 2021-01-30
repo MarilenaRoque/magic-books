@@ -1,0 +1,177 @@
+:root {
+  --azure: #0290ff;
+}
+
+.BookInfo {
+
+}
+
+.ChapterInfo {
+
+}
+
+.bookProgress {
+  display: flex;
+}
+
+.Category {
+  width: 49px;
+  height: 18px;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.blueText{
+  margin: 4px 0 0;
+  font-family: 'Roboto Slab', serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #4386bf;
+}
+
+.title {
+  width: 197px;
+  height: 29px;
+  margin: 3px 0px 0 0;
+  font-family: RobotoSlab;
+  font-size: 22px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.2px;
+  color: #121212;
+}
+
+.BookPanel {
+  margin: 37px 100px 0;
+  padding: 32px 27px 26px 27px;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.Buttons {
+  background-color: transparent;
+  border: none;
+  padding-left: 0px;
+}
+
+.verticalLine{
+  display: inline;
+  width: 2px;
+  height: 24px;
+  margin: 0px 13px 0 11px;
+  border: solid 1px #e8e8e8;
+}
+
+.progressImage {
+  width: 90px;
+  height: 90px;
+}
+
+.percentage {
+  width: 68px;
+  height: 39px;
+  margin: 1px 0px 20px 11px;
+  font-family: Montserrat;
+  font-size: 32px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.completed {
+  width: 80px;
+  height: 18px;
+  margin: 7px 79px 12px 12px;
+  opacity: 0.5;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.verticalDivision {
+  height: 70px;
+  border: solid 1px #e8e8e8;
+}
+
+.currentChapter {
+  width: 126px;
+  height: 18px;
+  opacity: 0.5;
+  margin-left: 10px;
+  font-family: RobotoSlab;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #121212;
+}
+
+.currentChapterNumber {
+  width: 75px;
+  height: 21px;
+  margin: 7px 109px 4px 10px;
+  font-family: RobotoSlab;
+  font-size: 16px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  color: #121212;
+}
+
+.buttonUpdate {
+  width: 184px;
+  height: 33px;
+  margin-left: 10px;
+  padding: 7px 19px 8px 22px;
+  border-radius: 3px;
+  border-color: transparent;
+  background-color: var(--azure);
+}
+
+.update {
+  width: 143px;
+  height: 18px;
+  font-family: RobotoSlab;
+  font-size: 13px;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.progress {
+  display:flex;
+  align-items: center;
+}
