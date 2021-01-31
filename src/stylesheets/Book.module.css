@@ -10,7 +10,7 @@
   width: 49px;
   height: 18px;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-size: 14px;
   font-weight: bold;
   font-stretch: normal;
@@ -20,7 +20,7 @@
   color: #121212;
 }
 
-.blueText{
+.blueText {
   margin: 4px 0 0;
   font-family: 'Roboto Slab', serif;
   font-size: 14px;
@@ -35,8 +35,8 @@
 .title {
   width: 197px;
   height: 29px;
-  margin: 3px 0px 0 0;
-  font-family: RobotoSlab;
+  margin: 3px 0 0 0;
+  font-family: RobotoSlab, serif;
   font-size: 22px;
   font-weight: bold;
   font-stretch: normal;
@@ -51,7 +51,7 @@
   padding: 32px 27px 26px 27px;
   border-radius: 4px;
   border: solid 1px #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -60,14 +60,14 @@
 .buttons {
   background-color: transparent;
   border: none;
-  padding-left: 0px;
+  padding-left: 0;
 }
 
-.verticalLine{
+.verticalLine {
   display: inline;
   width: 2px;
   height: 24px;
-  margin: 0px 13px 0 11px;
+  margin: 0 13px 0 11px;
   border: solid 1px #e8e8e8;
 }
 
@@ -79,8 +79,8 @@
 .percentage {
   width: 68px;
   height: 39px;
-  margin: 1px 0px 20px 11px;
-  font-family: Montserrat;
+  margin: 1px 0 20px 11px;
+  font-family: Montserrat, serif;
   font-size: 32px;
   font-weight: normal;
   font-stretch: normal;
@@ -95,7 +95,7 @@
   height: 18px;
   margin: 7px 79px 12px 12px;
   opacity: 0.5;
-  font-family: Montserrat;
+  font-family: Montserrat, serif;
   font-size: 14px;
   font-weight: normal;
   font-stretch: normal;
@@ -114,8 +114,8 @@
   width: 126px;
   height: 18px;
   opacity: 0.5;
-  margin: 13px 0px 7px 35px;
-  font-family: RobotoSlab;
+  margin: 13px 0 7px 35px;
+  font-family: RobotoSlab, serif;
   font-size: 13px;
   font-weight: 300;
   font-stretch: normal;
@@ -128,8 +128,8 @@
 .currentChapterNumber {
   width: 75px;
   height: 21px;
-  margin: 0px 109px 18px 35px;
-  font-family: RobotoSlab;
+  margin: 0 109px 18px 35px;
+  font-family: RobotoSlab, serif;
   font-size: 16px;
   font-weight: 300;
   font-stretch: normal;
@@ -152,7 +152,7 @@
 .update {
   width: 143px;
   height: 18px;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, serif;
   font-size: 18px;
   font-weight: 300;
   font-stretch: normal;
@@ -160,10 +160,10 @@
   line-height: normal;
   letter-spacing: 0.5px;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 .progress {
-  display:flex;
+  display: flex;
   align-items: center;
 }

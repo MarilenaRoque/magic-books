@@ -2,12 +2,10 @@
   --pale-grey: #f5f6fa;
 }
 
-
 body {
   padding: 70px 60px 123px 100px;
   background-color: var(--pale-grey);
 }
-
 
 #root {
   border-radius: 4px;
