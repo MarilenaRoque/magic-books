@@ -7,22 +7,22 @@ const Book = ({ book, handleRemoveBook }) => {
   const { title, category } = book;
   return (
 
-    <div className={styles.BookPanel}>
-      <div className={styles.BookInfo}>
-        <p className={styles.Category}>{category}</p>
+    <div className={styles.bookPanel}>
+      <div>
+        <p className={styles.category}>{category}</p>
         <p className={styles.title}>{title}</p>
         <p className={styles.blueText}>Author</p>
-        <button type="button" className={styles.Buttons}>
+        <button type="button" className={styles.buttons}>
           {' '}
           <span className={styles.blueText}>Comments </span>
         </button>
         <div className={styles.verticalLine} />
-        <button type="button" onClick={() => handleRemoveBook(book)} className={styles.Buttons}>
+        <button type="button" onClick={() => handleRemoveBook(book)} className={styles.buttons}>
           {' '}
           <span className={styles.blueText}>Remove </span>
         </button>
         <div className={styles.verticalLine} />
-        <button type="button" className={styles.Buttons}>
+        <button type="button" className={styles.buttons}>
           {' '}
           <span className={styles.blueText}>Edit </span>
         </button>
@@ -36,7 +36,7 @@ const Book = ({ book, handleRemoveBook }) => {
           </div>
         </div>
         <div className={styles.verticalDivision} />
-        <div className={styles.ChapterInfo}>
+        <div>
           <p className={styles.currentChapter}>Current Chapter</p>
           <p className={styles.currentChapterNumber}>Chapter 20</p>
           <button type="button" className={styles.buttonUpdate}>

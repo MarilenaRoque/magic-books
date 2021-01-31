@@ -2,7 +2,7 @@
     --azure: #0290ff;
 }
 
-.BookstoreCMS {
+.bookstoreCMS {
     width: 240px;
     height: 37px;
     margin: 6px 47px 2px 0;
@@ -20,7 +20,7 @@
     display:flex;
   }
 
-  .BOOKS {
+  .books {
     width: 75px;
     height: 22px;
     margin: 18px 41px 11px 0;
@@ -48,7 +48,7 @@
       display: flex;
   }
 
-  .Mask {
+  .mask {
     width: 17px;
     height: 17px;
   }

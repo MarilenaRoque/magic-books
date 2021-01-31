@@ -1,5 +1,8 @@
-.Line {
+.line {
     border: solid 1px #e8e8e8;
     margin-top: 0px;
 }
 
+.bookList {
+    background-color: #fafafa;
+}

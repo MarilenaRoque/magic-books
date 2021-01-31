@@ -7,11 +7,11 @@ import img from '../profile.svg';
 const CategoryFilter = ({ handleFilterChange }) => (
   <nav className={styles.panelBg}>
     <div className={styles.navLeft}>
-      <h3 className={styles.BookstoreCMS}>Bookstore CMS</h3>
-      <span className={styles.BOOKS}>BOOKS</span>
+      <h3 className={styles.bookstoreCMS}>Bookstore CMS</h3>
+      <span className={styles.books}>BOOKS</span>
 
       <select
-        className={styles.BOOKS}
+        className={styles.books}
         name="filter"
         id="filter"
         onChange={e => {
@@ -23,7 +23,7 @@ const CategoryFilter = ({ handleFilterChange }) => (
       </select>
     </div>
     <div className={styles.roundProfile}>
-      <img className={styles.Mask} src={img} alt="profile-icon" />
+      <img className={styles.mask} src={img} alt="profile-icon" />
     </div>
   </nav>
 );

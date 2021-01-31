@@ -7,9 +7,9 @@ import CategoryFilter from '../components/CategoryFilter';
 import styles from '../stylesheets/BooksList.module.css';
 
 const BooksList = ({ bookList, removeBook, handleFilterChange }) => (
-  <>
+  <div className={styles.bookList}>
     <CategoryFilter handleFilterChange={handleFilterChange} />
-    <hr className={styles.Line} />
+    <hr className={styles.line} />
 
     <div>
       {bookList && bookList.length
@@ -22,7 +22,7 @@ const BooksList = ({ bookList, removeBook, handleFilterChange }) => (
         ))
         : (<tr><td>No books yet! :(</td></tr>)}
     </div>
-  </>
+  </div>
 );
 
 const getBooksByFilter = state => {
