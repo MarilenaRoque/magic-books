@@ -40,6 +40,12 @@
   - Define an action to set the filter
   - User can filter books displayed by category using a select box
 
+### #5 Milestone Requirements:
+
+  - Improve the UI
+  - Style Elements
+  - Building placeholders for future implementation
+
 
 ## Built With
 
