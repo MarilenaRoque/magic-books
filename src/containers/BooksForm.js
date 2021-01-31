@@ -39,7 +39,7 @@ const BooksForm = props => {
         </select>
 
         <button type="button" className={styles.addButton} onClick={handleSubmit}>
-          <span className={styles.addButtonText}>Submit</span>
+          <span className={styles.addButtonText}>ADD BOOK</span>
         </button>
       </form>
     </>

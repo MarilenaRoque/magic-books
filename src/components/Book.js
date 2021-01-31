@@ -40,7 +40,7 @@ const Book = ({ book, handleRemoveBook }) => {
           <p className={styles.currentChapter}>CURRENT CHAPTER</p>
           <p className={styles.currentChapterNumber}>Chapter 20</p>
           <button type="button" className={styles.buttonUpdate}>
-            <span className={styles.update}>Update Progress</span>
+            <span className={styles.update}>UPDATE PROGRESS</span>
           </button>
         </div>
       </div>
