@@ -30,6 +30,7 @@ const BooksForm = props => {
   return (
     <>
       <hr className={styles.line} />
+      <p className={styles.title}>ADD NEW BOOK</p>
       <form className={styles.form}>
         <input className={styles.inputText} type="text" placeholder="Book Title" name="title" value={title} onChange={e => handleChangeTitle(e.target.value)} />
 

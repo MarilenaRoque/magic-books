@@ -114,7 +114,7 @@
   width: 126px;
   height: 18px;
   opacity: 0.5;
-  margin-left: 10px;
+  margin: 13px 0px 7px 35px;
   font-family: RobotoSlab;
   font-size: 13px;
   font-weight: 300;
@@ -128,7 +128,7 @@
 .currentChapterNumber {
   width: 75px;
   height: 21px;
-  margin: 7px 109px 4px 10px;
+  margin: 0px 109px 18px 35px;
   font-family: RobotoSlab;
   font-size: 16px;
   font-weight: 300;
@@ -142,7 +142,7 @@
 .buttonUpdate {
   width: 184px;
   height: 33px;
-  margin-left: 10px;
+  margin-left: 35px;
   padding: 7px 19px 8px 22px;
   border-radius: 3px;
   border-color: transparent;

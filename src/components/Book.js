@@ -37,7 +37,7 @@ const Book = ({ book, handleRemoveBook }) => {
         </div>
         <div className={styles.verticalDivision} />
         <div>
-          <p className={styles.currentChapter}>Current Chapter</p>
+          <p className={styles.currentChapter}>CURRENT CHAPTER</p>
           <p className={styles.currentChapterNumber}>Chapter 20</p>
           <button type="button" className={styles.buttonUpdate}>
             <span className={styles.update}>Update Progress</span>

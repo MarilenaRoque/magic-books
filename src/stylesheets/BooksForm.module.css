@@ -1,10 +1,28 @@
 :root {
     --azure: #0290ff;
+    --pale-grey: #f5f6fa;
   }
 
 .line {
     border: solid 1px #e8e8e8;
     margin: 40px 0px 29px 0px;
+}
+
+.bookstoreCMS {
+  background-color: var(--pale-grey);
+  margin-left: 100px;
+}
+
+.title {
+  margin-left: 100px;
+  font-family: Montserrat;
+  font-size: 20px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: -0.18px;
+  color: #888888;
 }
 
 .form {
