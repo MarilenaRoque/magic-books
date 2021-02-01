@@ -4,34 +4,25 @@ import PropTypes from 'prop-types';
 import Book from '../components/Book';
 import { removeBook, handleFilterChange } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
+import styles from '../stylesheets/BooksList.module.css';
 
 const BooksList = ({ bookList, removeBook, handleFilterChange }) => (
-  <>
-    <br />
-    <br />
+  <div className={styles.bookList}>
     <CategoryFilter handleFilterChange={handleFilterChange} />
-    <table>
-      <thead>
-        <tr>
-          <th>Book ID</th>
-          <th>Title</th>
-          <th>Category</th>
-          <th>Remove</th>
-        </tr>
-      </thead>
-      <tbody>
-        {bookList && bookList.length
-          ? bookList.map(book => (
-            <Book
-              key={Math.random + book.id}
-              book={book}
-              handleRemoveBook={removeBook}
-            />
-          ))
-          : (<tr><td>No books yet! :(</td></tr>)}
-      </tbody>
-    </table>
-  </>
+    <hr className={styles.line} />
+
+    <div>
+      {bookList && bookList.length
+        ? bookList.map(book => (
+          <Book
+            key={Math.random + book.id}
+            book={book}
+            handleRemoveBook={removeBook}
+          />
+        ))
+        : (<tr><td>No books yet! :(</td></tr>)}
+    </div>
+  </div>
 );
 
 const getBooksByFilter = state => {

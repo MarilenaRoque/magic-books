@@ -3,8 +3,12 @@
 
 > The requirement for this project is to build the front-end of an application that will help companies organize and manage their bookstore. It needs to be fast, dynamic and responsive to their actions and therefore, the project will be developed using React & Redux.
 
+### Deployment
 
-![Screenshot](./public/logo512.png)
+[Click Here for a Live Version of the Project](https://booksmagic.herokuapp.com/)
+
+
+![Screenshot](./public/screenshotapp.png)
 
 ## Development
 
@@ -39,6 +43,12 @@
   - Build a new redux reducer to set a book filter
   - Define an action to set the filter
   - User can filter books displayed by category using a select box
+
+### #5 Milestone Requirements:
+
+  - Improve the UI
+  - Style Elements
+  - Building placeholders for future implementation
 
 
 ## Built With

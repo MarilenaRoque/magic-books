@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { createBook, removeBook } from '../actions/index';
 import { categories } from '../constants';
+import styles from '../stylesheets/BooksForm.module.css';
 
 const BooksForm = props => {
   const [title, setTitle] = useState('');
@@ -27,28 +28,21 @@ const BooksForm = props => {
   };
 
   return (
-    <form>
-      <label htmlFor="title">
-        Title
-        <br />
-        <input type="text" name="title" value={title} onChange={e => handleChangeTitle(e.target.value)} />
-        <br />
-      </label>
-      <br />
-      <label htmlFor="categories">
-        Category
-        {' '}
-        <br />
-        <select name="categories" id="categories" value={category} onChange={e => handleChangeCategory(e.target.value)}>
+    <>
+      <hr className={styles.line} />
+      <p className={styles.title}>ADD NEW BOOK</p>
+      <form className={styles.form}>
+        <input className={styles.inputText} type="text" placeholder="Book Title" name="title" value={title} onChange={e => handleChangeTitle(e.target.value)} />
+
+        <select className={styles.categoryInput} name="categories" id="categories" value={category} onChange={e => handleChangeCategory(e.target.value)}>
           {categories.map(item => <option key={item} value={item}>{item}</option>)}
         </select>
-        <br />
-      </label>
-      <br />
-      <button type="button" className="add-book" onClick={handleSubmit}>
-        Submit
-      </button>
-    </form>
+
+        <button type="button" className={styles.addButton} onClick={handleSubmit}>
+          <span className={styles.addButtonText}>ADD BOOK</span>
+        </button>
+      </form>
+    </>
   );
 };
 

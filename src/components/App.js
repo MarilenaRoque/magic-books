@@ -2,10 +2,10 @@ import BooksForm from '../containers/BooksForm';
 import BooksList from '../containers/BooksList';
 
 const App = () => (
-  <div>
-    <BooksForm />
+  <>
     <BooksList />
-  </div>
+    <BooksForm />
+  </>
 );
 
 export default App;
