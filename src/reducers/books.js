@@ -1,4 +1,4 @@
-import { CREATE_BOOK, REMOVE_BOOK } from '../actionTypes';
+import { CREATE_BOOK, REMOVE_BOOK } from '../constants';
 
 const listingBooks = [
   {

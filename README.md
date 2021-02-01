@@ -4,9 +4,6 @@
 > The requirement for this project is to build the front-end of an application that will help companies organize and manage their bookstore. It needs to be fast, dynamic and responsive to their actions and therefore, the project will be developed using React & Redux.
 
 
-### You can access a Live Demo [HERE](https://booksmagic.herokuapp.com/)
-
-
 ![Screenshot](./public/logo512.png)
 
 ## Development
@@ -28,6 +25,26 @@
  - Set CREATE_BOOK and REMOVE_BOOK actions.
  - Set store with an initial state.
  - Pass the store to App component using Provider.
+
+### #3 Milestone Requirements:
+
+ - Make BookForm Component Stateful.
+ - State is updated when fields change.
+ - Add a column to BookList table with remove buttons
+ - HandleRemoveBook function reacts to onClick event and removes the book from the store.
+
+ ### #4 Milestone Requirements:
+
+  - Build a presentational component called CategoryFilter
+  - Build a new redux reducer to set a book filter
+  - Define an action to set the filter
+  - User can filter books displayed by category using a select box
+
+### #5 Milestone Requirements:
+
+  - Improve the UI
+  - Style Elements
+  - Building placeholders for future implementation
 
 
 ## Built With
