@@ -6,24 +6,27 @@ import { removeBook, handleFilterChange } from '../actions/index';
 import CategoryFilter from '../components/CategoryFilter';
 import styles from '../stylesheets/BooksList.module.css';
 
-const BooksList = ({ bookList, removeBook, handleFilterChange }) => (
-  <div className={styles.bookList}>
-    <CategoryFilter handleFilterChange={handleFilterChange} />
-    <hr className={styles.line} />
+const BooksList = ({ bookList, removeBook, handleFilterChange }) => {
+  console.log(bookList);
+  return (
+    <div className={styles.bookList}>
+      <CategoryFilter handleFilterChange={handleFilterChange} />
+      <hr className={styles.line} />
 
-    <div>
-      {bookList && bookList.length
-        ? bookList.map(book => (
-          <Book
-            key={Math.random + book.id}
-            book={book}
-            handleRemoveBook={removeBook}
-          />
-        ))
-        : (<tr><td>No books yet! :(</td></tr>)}
+      <div>
+        {bookList && bookList.length
+          ? bookList.map(book => (
+            <Book
+              key={Math.random + book.id}
+              book={book}
+              handleRemoveBook={removeBook}
+            />
+          ))
+          : (<tr><td>No books yet! :(</td></tr>)}
+      </div>
     </div>
-  </div>
-);
+  );
+};
 
 const getBooksByFilter = state => {
   const { books, filter } = state;
@@ -33,7 +36,7 @@ const getBooksByFilter = state => {
   return books;
 };
 
-const mapStateToProps = state => ({ bookList: getBooksByFilter(state) });
+const mapStateToProps = state => ({ bookList: getBooksByFilter(state.books) });
 
 export default connect(mapStateToProps, { removeBook, handleFilterChange })(BooksList);
 
